@@ -1,10 +1,21 @@
 <?php
+
+include "db_config.php";
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-if ($username == "admin" && $password == "12345") {
-    echo "Welcome, admin!";
+// YOUR LOGIN CREDENTIALS
+if ($username === "Moro" && $password === "12345") {
+
+    echo "<h2>Welcome, Moro!</h2>";
+    echo "<p>Login successful.</p>";
+
 } else {
-    echo "Invalid username or password";
+
+    echo "<h2>Login Failed</h2>";
+    echo "<p>Invalid username or password.</p>";
+
 }
+
 ?>
